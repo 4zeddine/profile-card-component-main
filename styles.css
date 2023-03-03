@@ -1,0 +1,120 @@
+:root{
+  --cyan: hsl(185, 75%, 39%);
+  --darkblue: hsl(229, 23%, 23%);
+  --grayishblue: hsl(227, 10%, 46%);
+}
+/* resetting */
+*{
+  box-sizing: border-box;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+/* body styles */
+body{
+  margin:0;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--cyan);
+  overflow: hidden;
+}
+#pattern-top{
+  position: absolute;
+  top:-45%;
+  left:-5%;
+}
+#pattern-bottom{
+  position: absolute;
+  bottom:-42%;
+  right:-5%;
+}
+/* Main component */
+main{
+  position: relative;
+  z-index: 10;
+  margin:10.813rem auto;
+  max-width: 21.875rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 1px 13px 52px 6px rgb(0 0 0 / 15%);
+}
+/* top card section */
+.section{
+  max-height: 8.75rem;
+}
+.section img{
+  width:100%;
+}
+/* profile image */
+#profile{
+  position: relative;
+  z-index: 20;
+  display: block;
+  max-width: 6.25rem;
+  border-radius: 50%;
+  border: solid 5px #fff ;
+  margin: -3rem auto 0;
+}
+/* info section */
+.info{
+  margin:1.75rem auto 0;
+  text-align: center;
+  color: var(--grayishblue);
+  padding-bottom: 1.75rem;
+  border-bottom: solid 1px hsla(227, 10%, 46%,0.1);
+}
+.person-info{
+  font-size: 1.125rem;
+  margin-bottom: 0.6rem;
+}
+.person-name{
+  font-weight: 700;
+  color: var(--darkblue);
+  margin-right: 0.625rem;
+}
+/* stats section */
+.stats{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.813rem 3.563rem 1.688rem 3rem ;
+  text-align: center;
+  color: var(--grayishblue);
+}
+.stats-element{
+  display: flex;
+  flex-direction: column;
+}
+.stats-numbers{
+  color: var(--darkblue);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+
+
+
+@media (max-width:600px) {
+
+  main{
+
+    margin:9.313rem auto;
+    max-width: 20.375rem;
+    
+  }
+}
+@media (max-width:400px) {
+  #pattern-top{
+    max-width: 2rem;
+  }
+  #pattern-bottom{
+    max-width: 2rem;
+  }
+  main{
+    margin:9.313rem 2rem;
+    max-width: 20.375rem;
+  }
+  .stats{
+   padding: 1.813rem 3.375rem 1.688rem 2.6255rem ;
+  }
+}
